@@ -11,7 +11,7 @@ LDFLAGS ?= "-X main.version=$(VERSION)"
 
 # Docker variables
 DEFAULT_TAG  ?= $(shell echo "$(VERSION)" | tr -d 'v')
-DOCKER_IMAGE := quay.io/git-chglog/git-chglog
+DOCKER_IMAGE := quay.io/ironashram/git-chglog
 DOCKER_TAG   ?= $(DEFAULT_TAG)
 
 .PHONY: all
